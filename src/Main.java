@@ -33,7 +33,7 @@ public class Main {
         return problems;
     }
 
-    public static void encodeJSON(ArrayList<Problem> problems, String fileName) throws IOException, ParseException {
+    public static void encodeJSON(ArrayList<Problem> problems, String fileName) throws IOException {
         JSONObject jsonObject = new JSONObject();
         JSONArray jsonArray = new JSONArray();
         for (Problem problem : problems) {
@@ -103,9 +103,5 @@ public class Main {
         encodeJSON(onlyFirst, output1);
         encodeJSON(onlySecond, output2);
         encodeJSON(both, output3);
-
-//        String path = "C:\\Users\\Luka\\JavaProjects\\Qodana-test-task2\\res\\example.json";
-//        ArrayList<Problem> testProblems = decodeJSON(path);
-//        encodeJSON(testProblems, "C:\\Users\\Luka\\JavaProjects\\Qodana-test-task2\\res\\new.json");
     }
 }
