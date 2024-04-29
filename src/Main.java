@@ -62,13 +62,13 @@ public class Main {
         String input1 = scanner.nextLine();
         System.out.println("Enter path to second Bugban file: ");
         String input2 = scanner.nextLine();
-        System.out.println("Enter path to first output file: ");
+        System.out.println("Enter path to first output file (for problems only in the first input): ");
         String output1 = scanner.nextLine();
-        System.out.println("Enter path to second output file: ");
+        System.out.println("Enter path to second output file (for problems only in the second input): ");
         String output2 = scanner.nextLine();
-        System.out.println("Enter path to third output file: ");
-
+        System.out.println("Enter path to third output file (for problems in both inputs): ");
         String output3 = scanner.nextLine();
+
         scanner.close();
 
         ArrayList<Problem> problems1 = decodeJSON(input1);
